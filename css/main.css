@@ -35,21 +35,22 @@ a {
 	margin: 0 auto;
 	/*max-wdith up to 1200px*/
 	width: 960px;
+	/*background-color: #f5f7fa;*/
 }
 
 #mainHeader {
-	margin-top: 40px;
+	margin-top: 0px;
 	height: 100px;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 40px;
 }
 
-/*#logo {
-	height: 100px
-	width: 200px;
+#logo {
+	height: 100px;
+	width: 170px;
 	margin-top: 5px;
-}*/
+}
 
 #mainNav {
 	margin-left: auto;
@@ -89,4 +90,39 @@ background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /*
 background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+}
+
+#heroImage {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+#welcome {
+	margin-bottom: 30px;
+}
+
+#welcomeHeader {
+	margin-bottom: 30px;
+}
+
+#meeting {
+
+}
+
+#meetingInfoHead {
+	margin: 0;
+	display: block;
+}
+
+#map {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#meetingInfo {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
 }
