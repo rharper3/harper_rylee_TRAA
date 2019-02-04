@@ -4,3 +4,35 @@
 
 display:none;
 }
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+	background-color: #fff;
+	border-top: 10px solid #333;
+}
+
+p {
+	line-height: 20px;
+}
+
+h1 {
+	font-family: "Signika", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+}
+
+h2 {
+	font-family: "Signika", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#siteCon {
+	margin: 0 auto;
+	/*max-wdith up to 1200px*/
+	width: 960px;
+}
