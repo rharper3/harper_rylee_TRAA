@@ -14,7 +14,7 @@ body {
 }
 
 p {
-	line-height: 20px;
+	line-height: 25px;
 }
 
 h1 {
@@ -25,6 +25,12 @@ h1 {
 h2 {
 	font-family: "Signika", Helvetica, Arial, sans-serif;
 	font-size: 20px;
+}
+
+h3 {
+	font-family: "Signika", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 10px;
 }
 
 a {
@@ -40,10 +46,11 @@ a {
 
 #mainHeader {
 	margin-top: 0px;
-	height: 100px;
+	height: 170px;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 40px;
+	border-bottom: solid 10px #9ABD4B;
 }
 
 #logo {
@@ -67,33 +74,34 @@ a {
 #mainNav ul li a {
 	display: block;
 	justify-content: space-between;
-	margin-top: 100px;
-	/*width: 150px;*/
+	margin-top: 140px;
+	width: 100px;
 	background-color: #f1f1f1f1;
 	color: grey;
+	/*font-weight: bold;*/
 	/*margin-left: 50px;*/
 	text-align: center;
 	padding: 8px;
 	font-size: 14px;
 	text-transform: uppercase;
 	/*gradient VVV*/
-	background: #ffffff;
-	background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 	}
 
 #mainNav ul li a:hover {
-background: #fcfff4;
-background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+	background: #fcfff4;
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
 }
 
 #heroImage {
-	margin-top: 100px;
+	margin-top: 80px;
 	margin-bottom: 50px;
 }
 
@@ -106,7 +114,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
 }
 
 #meeting {
-
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
 }
 
 #meetingInfoHead {
@@ -114,15 +124,157 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
 	display: block;
 }
 
+#meetingInfo p {
+	margin-top: 20px;
+}
+
 #map {
 	display: flex;
 	flex-direction: row;
-	margin: auto;
-	margin-top: 100px;
+	margin-right: auto;
+	/*margin-top: 100px;*/
 }
 
-#meetingInfo {
+/*#meetingInfo {
+	
+}*/
+
+/*#membershipFunding {*/
+/*	display: flex;
+	flex-direction: row;
+	margin: 0;*/
+}
+
+/*#membership {
 	margin: 0;
+	display: block;
+}*/
+
+/*#membership h2 p {
+	float: right;
+
+}
+
+#membership h2 {
+	flex-direction: column;
+	margin: 0 auto;
+}
+#membership p {
+	margin-top: 50px;
+}*/
+
+#fundingIMG {
+	height: 300px;
+	width: 301px;
+	background-color: gray;
+}
+
+#troutHatchery {
 	display: flex;
 	flex-direction: row;
+	margin-top: 40px;
+}
+
+#troutHatchery h2  {
+	margin-bottom: 20px;
+}
+
+#currentEvents h1 {
+	margin: 40px 0px 30px 0px;
+}
+
+#rodBuilding {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+}
+
+#streamHabitat {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 100px;
+}
+
+
+#supporters {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+#mainFooter {
+	margin-left: auto;
+	border-top: 10px solid gray;
+	margin-top: 50px;
+	/*could also use justify-content: space between; in #mainHeader in stead of margin-left:auto; here*/
+	display: flex;
+	flex-direction: column;	
+}
+
+#footerNav ul {
+	display: flex;
+	flex-direction: row;
+}
+
+#footerNav ul li a {
+	display: block;
+	justify-content: space-between;
+	margin-top: 20px;
+	/*width: 150px;*/
+	background-color: #f1f1f1f1;
+	color: grey;
+	/*margin-left: 50px;*/
+	text-align: center;
+	padding: 8px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+/*Projects Page CSS*/
+
+#projectDesc {
+	margin: 40px 0px 20px 0px; /*trbl*/
+	/*background-color: #F8F8F8;*/
+	/*padding: 10px;*/
+}
+
+#projectDesc h1 {
+	margin: 0px 0px 20px 0px; /*trbl*/	
+}
+
+#project1 {
+	display: flex;
+	flex-direction: row;
+/*	margin-bottom: 100px;*/
+}
+
+#project1TXT {
+	display: none;
+}
+
+#project1 h2 {
+	margin-bottom: 10px;
+}
+
+#project p {
+	padding-top: 20px;
+}
+
+#project1 {
+	display: flex;
+	flex-direction: row;
+/*	margin-bottom: 100px;*/
+}
+
+#project1TXT {
+	display: none;
+}
+
+#project1 h2 {
+	margin-bottom: 10px;
+}
+
+#project p {
+	padding-top: 20px;
 }
