@@ -204,12 +204,8 @@ a {
 }
 
 #mainFooter {
-	margin-left: auto;
-	border-top: 10px solid gray;
 	margin-top: 50px;
-	/*could also use justify-content: space between; in #mainHeader in stead of margin-left:auto; here*/
-	display: flex;
-	flex-direction: column;	
+	border-top: solid 10px #9ABD4B;	
 }
 
 #footerNav ul {
@@ -220,7 +216,7 @@ a {
 #footerNav ul li a {
 	display: block;
 	justify-content: space-between;
-	margin-top: 20px;
+	margin-top: 60px;
 	/*width: 150px;*/
 	background-color: #f1f1f1f1;
 	color: grey;
@@ -234,7 +230,7 @@ a {
 /*Projects Page CSS*/
 
 #projectDesc {
-	margin: 40px 0px 20px 0px; /*trbl*/
+	margin: 40px 0px 40px 0px; /*trbl*/
 	/*background-color: #F8F8F8;*/
 	/*padding: 10px;*/
 }
@@ -243,38 +239,53 @@ a {
 	margin: 0px 0px 20px 0px; /*trbl*/	
 }
 
-#project1 {
+.project {
 	display: flex;
 	flex-direction: row;
 /*	margin-bottom: 100px;*/
 }
 
-#project1TXT {
-	display: none;
-}
 
-#project1 h2 {
+.project h2 {
 	margin-bottom: 10px;
 }
 
-#project p {
+#projects p {
 	padding-top: 20px;
 }
 
-#project1 {
+.project {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+/*	margin-bottom: 100px;*/
+}
+
+.project img {
+	margin-right: 20px;
+}
+
+.project p {
+	margin-bottom: 10px;
+}
+
+.project {
 	display: flex;
 	flex-direction: row;
 /*	margin-bottom: 100px;*/
 }
 
-#project1TXT {
-	display: none;
+#projectArchives {
+	display: flex;
+	flex-direction: column;
 }
 
-#project1 h2 {
+#projectArchives h1 {
+	margin-bottom: 20px;
+}
+
+#projectArchives a {
 	margin-bottom: 10px;
+	color: green;
 }
 
-#project p {
-	padding-top: 20px;
-}
