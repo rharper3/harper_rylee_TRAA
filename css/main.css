@@ -15,22 +15,28 @@ body {
 
 p {
 	line-height: 25px;
+	margin-bottom: 15px;
+	text-align: justify;
+	width: 520px;
 }
 
 h1 {
 	font-family: "Signika", Helvetica, Arial, sans-serif;
 	font-size: 30px;
+	margin-bottom: 10px;
 }
 
 h2 {
 	font-family: "Signika", Helvetica, Arial, sans-serif;
 	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 h3 {
 	font-family: "Signika", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 10px;
+	margin-bottom: 10px; 
 }
 
 a {
@@ -135,64 +141,41 @@ a {
 	/*margin-top: 100px;*/
 }
 
-/*#meetingInfo {
-	
-}*/
-
-/*#membershipFunding {*/
-/*	display: flex;
-	flex-direction: row;
-	margin: 0;*/
-}
-
-/*#membership {
-	margin: 0;
-	display: block;
-}*/
-
-/*#membership h2 p {
-	float: right;
-
-}
-
-#membership h2 {
-	flex-direction: column;
-	margin: 0 auto;
-}
-#membership p {
-	margin-top: 50px;
-}*/
-
 #fundingIMG {
 	height: 300px;
 	width: 301px;
 	background-color: gray;
 }
 
-#troutHatchery {
+.troutHatchery {
 	display: flex;
 	flex-direction: row;
-	margin-top: 40px;
+	margin-bottom: 80px;
 }
 
-#troutHatchery h2  {
-	margin-bottom: 20px;
+.troutHatcheryIMG {
+	margin-right: 15px;
 }
 
 #currentEvents h1 {
 	margin: 40px 0px 30px 0px;
 }
 
-#rodBuilding {
+.rodBuilding {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
+}
+
+.rodBuildingIMG {
+	margin-right: 15px;
+
 }
 
 #streamHabitat {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 }
 
 
@@ -203,17 +186,17 @@ a {
 	margin-top: 40px;
 }
 
-#mainFooter {
+.mainFooter {
 	margin-top: 50px;
 	border-top: solid 10px #9ABD4B;	
 }
 
-#footerNav ul {
+.footerNav ul {
 	display: flex;
 	flex-direction: row;
 }
 
-#footerNav ul li a {
+.footerNav ul li a {
 	display: block;
 	justify-content: space-between;
 	margin-top: 60px;
@@ -237,6 +220,10 @@ a {
 
 #projectDesc h1 {
 	margin: 0px 0px 20px 0px; /*trbl*/	
+}
+
+#projectDesc p {
+	width: 960px;
 }
 
 .project {
@@ -289,3 +276,111 @@ a {
 	color: green;
 }
 
+/*Events Page CSS*/
+
+#startSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 90px;
+}
+
+#calendarIMG {
+	width: 400px;
+	height: 400px;
+	background-color: gray;
+}
+
+#newsTxt {
+	width: 400px;
+}
+
+#newsTxt h1 {
+	margin-bottom: 20px;
+}
+
+#newsTxt p {
+	width: 400px;
+}
+
+.troutHatcheryIMG {
+	display: flex;
+	flex-direction: row;
+}
+
+#video {
+	margin-right: 15px;
+}
+
+#recentEvents {
+	border-bottom: solid 1px #9ABD4B;
+}
+
+#pastEvents h1 {
+	margin-bottom: 20px;
+	margin-top: 80px;
+}
+
+.button {
+	text-align: center;
+	margin-left: 435px;
+	padding: 7px;
+	font-size: 12.5px;
+	/*text-transform: uppercase;*/
+	text-decoration: none;
+	color: #F1F1F1F1;
+	border-radius: 3px;
+	background: #5D7031;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.1);
+	/*gradient VVV*/
+	background: rgb(201,222,150); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(93,112,49,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(93,112,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(93,112,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#5d7031',GradientType=0 ); /* IE6-9 */
+}
+
+.button:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9de96+0,8ab66b+44,398235+100;Green+3D+%233 */
+	background: rgb(201,222,150); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 ); /* IE6-9 */
+}
+
+#SMbutton {
+	margin-left: 870px;
+	padding: 7px;
+	font-size: 13px;
+	/*text-transform: uppercase;*/
+	text-decoration: none;
+	color: #F1F1F1F1;
+	border-radius: 3px;
+	background: #5D7031;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.1);
+	/*gradient VVV*/
+	background: rgb(201,222,150); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(93,112,49,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(93,112,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(93,112,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#5d7031',GradientType=0 ); /* IE6-9 */	
+}
+
+#SMbutton:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9de96+0,8ab66b+44,398235+100;Green+3D+%233 */
+	background: rgb(201,222,150); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 ); /* IE6-9 */	
+}
+
+#paddleFish {
+	display: flex;
+	flex-direction: row;
+}
+
+#paddleFishIMG {
+	margin-right: 15px;
+}
