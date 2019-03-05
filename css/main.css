@@ -82,29 +82,26 @@ a {
 	justify-content: space-between;
 	margin-top: 140px;
 	width: 100px;
-	background-color: #f1f1f1f1;
-	color: grey;
-	/*font-weight: bold;*/
-	/*margin-left: 50px;*/
 	text-align: center;
 	padding: 8px;
 	font-size: 14px;
 	text-transform: uppercase;
+	color: gray;
 	/*gradient VVV*/
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-	}
+/*	background: rgb(255,255,255);=
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); 
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); 
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );*/ 
+	} 
 
-#mainNav ul li a:hover {
-	background: #fcfff4;
-	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
-}
+/*#mainNav ul li a:hover {
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); 
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); 
+}*/
 
 #heroDiv {
 	height: 300px;
@@ -203,7 +200,6 @@ a {
 	justify-content: space-between;
 	margin-top: 60px;
 	/*width: 150px;*/
-	background-color: #f1f1f1f1;
 	color: grey;
 	/*margin-left: 50px;*/
 	text-align: center;
@@ -224,10 +220,10 @@ a {
   font-size: 14px;
   border: none;
   outline: none;
-  background-color: #F1F1F1F1;
   color: grey;
   cursor: pointer;
   padding: 8px;
+  text-transform: uppercase;
 }
 /*Projects Page CSS*/
 
@@ -411,4 +407,50 @@ a {
 
 #paddleFishIMG {
 	margin-right: 15px;
+}
+
+/*About Page*/
+
+.aboutListItems {
+	margin: 20px 0px 25px 30px /*trbl*/
+}
+
+#aListItems ul li {
+	line-height: 20px;
+	list-style: circle;
+}
+
+#moreAboutIMG  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.placeholder {
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	
+}
+
+#moreAbout h2 {
+	margin-top: 50px;
+}
+
+#moreAbout p {
+	width: 100%;
+	/*text-align: center;*/
+}
+
+#traaExceutives {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 0px;
 }
