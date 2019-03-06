@@ -444,9 +444,13 @@ a {
 	/*text-align: center;*/
 }
 
-#traaExceutives {
+/*#traaExceutives {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+}*/
+
+#traaExceutives h1 {
+	margin-top: 30px;
 }
 
 .title {
@@ -454,3 +458,13 @@ a {
 	font-weight: bold;
 	margin-bottom: 0px;
 }
+
+/*#traaVolunteer {
+	display: felx;
+	flex-direction: row;
+}*/
+
+#traaVolunteer {
+	margin-top: 30px;
+}
+
