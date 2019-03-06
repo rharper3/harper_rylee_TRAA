@@ -468,3 +468,53 @@ a {
 	margin-top: 30px;
 }
 
+/*Contact Page*/
+
+#locationInfo {
+	display: flex;
+	flex-direction: row;
+}
+
+/*#contactField {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between; 
+} */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 20px; 
+  margin-bottom: 16px;
+  resize: vertical; 
+}
+
+#findUs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+#mailUs p {
+	width: 350px;
+}
+
+#mailUs h2 {
+	margin-bottom: 30px;
+}
+
+#address p {
+	line-height: 13px;
+}
+
+#generalMeeting h2 {
+	margin-bottom: 20px;
+}
+
+span {
+	font-weight: bold;
+}
