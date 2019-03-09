@@ -482,7 +482,9 @@ a {
 } */
 
 input[type=text], select, textarea {
-  width: 100%;
+  display: block;
+  width: 400px;
+  margin-right: 200px;
   padding: 12px; 
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -490,6 +492,17 @@ input[type=text], select, textarea {
   margin-top: 20px; 
   margin-bottom: 16px;
   resize: vertical; 
+}
+
+.button {
+	margin-left: 0px;
+}
+
+hr {
+	border: solid .5px #9ABD4B;
+	width: 70%;
+	margin-top: 50px;
+	margin-bottom: 70px;
 }
 
 #findUs {
