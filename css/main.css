@@ -73,14 +73,13 @@ hr {
 }
 
 #logo {
+	display: block;
 	height: 100px;
 	width: 170px;
 	margin-top: 5px;
 }
 
 #topNav {
-	margin-left: auto;
-	/*could also use justify-content: space between; in #mainHeader in stead of margin-left:auto; here*/
 	display: flex;
 }
 
@@ -97,7 +96,7 @@ hr {
 	text-align: center;
 	font-size: 14px;
 	text-transform: uppercase;
-	background-color: #f1f1f1f1;
+	/*background-color: #f1f1f1f1;*/
 	padding: 3px;
 	border-radius: 3px;
 	color: gray;
@@ -233,7 +232,7 @@ hr {
 
 .rodBuildingIMG {
 	margin-right: 15px;
-	border: 1px solid #9ABD4B
+	border: 1px solid #9ABD4B;
 
 }
 
@@ -243,14 +242,18 @@ hr {
 	margin-bottom: 80px;
 }
 
+#supportSep {
+	margin-top: 100px;
+	margin-bottom: 100px; 
+}
 
-/*#supporters {
+
+#supportersLogos {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 100px;
 	margin-bottom: 80px;
-}*/
+}
 
 .mainFooter {
 	margin-top: 150px;
