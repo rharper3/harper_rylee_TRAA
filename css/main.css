@@ -10,7 +10,7 @@ body {
 	font-size: 14px;
 	color: #333;
 	background-color: #fff;
-	border-top: 10px solid #333;
+	/*border-top: 10px solid #333;*/
 }
 
 p {
@@ -23,20 +23,20 @@ p {
 h1 {
 	font-family: "Signika", Helvetica, Arial, sans-serif;
 	font-size: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 }
 
 h2 {
 	font-family: "Signika", Helvetica, Arial, sans-serif;
 	font-size: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 h3 {
 	font-family: "Signika", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-style: italic;
-	margin-bottom: 10px; 
+	margin-bottom: 20px; 
 }
 
 h4 {
@@ -48,6 +48,12 @@ h4 {
 
 a {
 	text-decoration: none;
+}
+
+hr {
+	border: solid .5px #9ABD4B;
+	width: 70%;
+	margin-bottom: 20px;
 }
 
 #siteCon {
@@ -133,50 +139,76 @@ a {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); 
 }*/
 
-#heroDiv {
+#heroImage {
 	height: 300px;
 	width: 960px;
-	background-color: gray;
+
 	margin: 40px 0px 80px 0px;
 	
 }
 
 #welcome {
-	margin-bottom: 80px;
 	text-align: center;
-	padding: 10px;
-	border-top: solid 1px #9ABD4B;
-	border-bottom: solid 1px #9ABD4B;		
+	padding: 10px;		
+}
+
+#welcome h1 {
+	margin-bottom: 10px;
 }
 
 #welcome p {
 	width: 960px;
+	text-align: center;
+}
+
+#membershipFunding {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-bottom: 100px;
+	margin-top: 100px;
+	background-color: #9ABD4B;
+	padding: 20px;
+}
+
+#membershipTXT p {
+	width: 370px;
+
+}
+
+#fundingText ul {
+	margin-bottom: 20px;
+	list-style: circle;
+	margin-left: 25px;
+}
+
+#fundingText ul li {
+	line-height: 20px;
+	font-weight: bold;
 }
 
 #meetingInfo {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 80px;
+	margin-bottom: 100px;
+	margin-top: 70px;
 }
+
 
 #map {
 	margin-right: 15px;
 }
 
 #infoTXT h2 {
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 }
 
-#fundingIMG {
-	height: 300px;
-	width: 301px;
-	background-color: gray;
-}
 
 .troutHatchery {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 80px;
+	margin-top: 100px;
 }
 
 .troutHatcheryIMG {	
@@ -195,8 +227,13 @@ a {
 	margin-bottom: 50px;
 }
 
+.rodBuilding h2 {
+	margin-bottom: 5px;
+}
+
 .rodBuildingIMG {
 	margin-right: 15px;
+	border: 1px solid #9ABD4B
 
 }
 
@@ -207,28 +244,37 @@ a {
 }
 
 
-#supporters {
+/*#supporters {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 100px;
 	margin-bottom: 80px;
-}
+}*/
 
 .mainFooter {
-	margin-top: 50px;
+	margin-top: 150px;
 	border-top: solid 10px #9ABD4B;	
+}
+
+#heroImageLogo {
+	height: 100px; 
+	width: 120px;
+}
+
+.footerNav {
+	margin-left: 130px;
 }
 
 .footerNav ul {
 	display: flex;
 	flex-direction: row;
+	margin-top: 10px;
 }
 
 .footerNav ul li a {
 	display: block;
 	justify-content: space-between;
-	margin-top: 60px;
 	/*width: 150px;*/
 	color: grey;
 	/*margin-left: 50px;*/
@@ -244,9 +290,9 @@ a {
 }
 
 #backTop { 
-  margin-top: 60px;
-  margin-left: 467px;
-  margin-bottom: 3px;
+ /* margin-top: 60px;*/
+  margin-left: 344px;
+/*  margin-bottom: 70px;*/
   font-size: 14px;
   border: none;
   outline: none;
@@ -255,6 +301,7 @@ a {
   padding: 8px;
   text-transform: uppercase;
 }
+
 /*Projects Page CSS*/
 
 #projectDesc {
@@ -344,26 +391,6 @@ a {
 
 #video {
 	margin-right: 15px;
-}
-
-#membershipFunding {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 80px;
-	border-bottom: solid 1px #9ABD4B;
-	padding-bottom: 70px;	
-}
-
-#fundingText ul {
-	margin-bottom: 20px;
-	list-style: circle;
-	margin-left: 25px;
-}
-
-#fundingText ul li {
-	line-height: 20px;
-	font-weight: bold;
 }
 
 #recentEvents {
@@ -528,12 +555,6 @@ input[type=text], select, textarea {
 	margin-left: 0px;
 }
 
-hr {
-	border: solid .5px #9ABD4B;
-	width: 70%;
-	margin-top: 50px;
-	margin-bottom: 70px;
-}
 
 #findUs {
 	display: flex;
