@@ -204,8 +204,8 @@ span {
 
 .mainNav button.expanded {
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .mainNav li a {
@@ -275,6 +275,7 @@ span {
 }
 
 #funding h1 {
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
