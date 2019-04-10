@@ -200,6 +200,8 @@ span {
   border: 0;
   transition:all 400ms ease;
   margin-left: auto;
+  margin-right: 25px;
+  padding-top: 30px;
 }
 
 .mainNav button.expanded {
@@ -381,27 +383,21 @@ span {
 }
 
 #section1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+flex: 1 1 200px;
 }
 
 #section2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 30px;
+flex: 1 1 200px;
+}
+
+#anglersSportLogo {
+  flex: 1 1 200px;
 }
 
 .footerNav {
   border-top: solid 6px #8ea76d;
   display: flex;
   flex-direction: row;
-}
-
-.footerLogo {
-  max-width: 70px;
-  order: -1;
 }
 
 .footerNav ul {
@@ -415,6 +411,7 @@ span {
   padding: 8px;
   font-size: 14px;
   display: none;
+  margin-left: auto;
 }
 
 #backTop {
@@ -497,6 +494,10 @@ input[type=text], select, textarea {
   margin-bottom: 15px;
 }
 
+#salmonidMonTXT {
+  max-width: 100% !important;
+}
+
 #salmonidMonTXT p {
   margin-bottom: 30px;
 }
@@ -540,6 +541,11 @@ input[type=text], select, textarea {
 
 @media screen and (min-width: 640px) { 
 
+
+.mainNav button {
+  margin-right: 40px;
+}
+
 #heroImage {
   display: block;
 }
@@ -575,7 +581,7 @@ input[type=text], select, textarea {
 }
 
 .troutHatcheryTXT {
-  width: 55% !important;
+  width: 100% !important;
   margin-top: 30px;
 }
 
@@ -589,7 +595,7 @@ input[type=text], select, textarea {
 }
 
 .rodBuildingTXT {
-    width: 55% !important;
+    width: 100% !important;
     margin-top: 30px;
 }
 
@@ -645,6 +651,8 @@ h3 {
 #logoCon {
   display: flex;
   order: -1;
+  flex: 1 1 100px;
+  margin: 0;
 }
 
 .mainNav {
@@ -672,6 +680,10 @@ h3 {
 #traaLogo {
   max-width: 120px;
   order: -1;
+}
+
+#logoCon {
+  margin-right: 0 auto;
 }
 
 .topNav {
@@ -715,11 +727,28 @@ h3 {
 
 .rodBuildingTXT {
     margin-top: 30px;
+    margin-left: 20px; 
 }
 
 .rodBuildingIMG {
     margin: 30px 15px 30px 0px;
 }
+
+#traaLogo {
+  margin: 0;
+  margin-left: 25px;
+}
+
+.footerLogo {
+  max-width: 70px;
+  order: -1;
+  flex: 1 1 200px;
+}
+
+#footerNav {
+  margin-left: 600px;
+}
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -740,6 +769,13 @@ p {
 
 .rodBuildingTXT h2 {
   margin-bottom: 15px
+}
+
+
+#logoCon {
+  margin: 0;
+}
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -775,7 +811,7 @@ p {
 
 /*contact page media quaries*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
 
 #locationInfo {
   display: grid;
@@ -809,34 +845,48 @@ p {
 
 /*projects page media queries*/
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
 
-  .header {
+.header {
     border-bottom: solid 6px #9ABD4B;
-  }
-
-  #projectDesc {
-    margin-top: 50px;
-  }
-
-  #salmonidMon {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  }
-
-  #salmonidMonIMG {
-  margin: 30px 30px 30px 0px;
-  }
-
-  #salmonidMonTXT {
-    max-width: 700px;
-    margin-top: 55px;
-  }
-
-  #troutHatchery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  }
 }
+
+#projectDesc {
+    margin-top: 50px;
+}
+
+#salmonidMon {
+  display: flex;
+  flex-direction: row;
+}
+
+#salmonidMonIMG {
+  margin-top: 80px;
+  flex: 1 1 210px;
+    margin-right: 15px;
+}
+
+#salmonidMonTXT {
+  margin-top: 80px;
+  flex: 1 1 700px;
+}
+
+#troutHatchery {
+  display: flex;
+  flex-direction: row; 
+}
+
+#troutHatcheryIMG {
+  margin-top: 80px;
+  text-align: left;
+  flex: 1 1 210px;
+  margin-right: 15px;
+}
+
+#troutHatcheryTXT {
+  flex: 1 1 700px;
+  margin-top: 80px;
+}
+
+}
+
