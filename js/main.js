@@ -1,10 +1,15 @@
-(function(){
-	"use strict";
+(() => {
 	
 	console.log("fired");
 
-	var button = document.querySelector("#button");
+	var button 	  = document.querySelector("#button");
 	var burgerCon = document.querySelector("#burgerCon");
+	var imageSwitcher = window.setInterval(switchImage, 2000);
+	var counter = 0;
+
+	const imgSources = ["traa_heroimage.svg", "placeholder1_carousel.svg", "placeholder2_carousel.svg"]
+
+// Hamburger Menu
 
 	function hamburgerMenu() {
 		burgerCon.classList.toggle("slideToggle");
@@ -13,7 +18,8 @@
 
 	button.addEventListener("click", hamburgerMenu, false);
 	
-})();
+
+// Back To Top
 
 window.onscroll = function() {scrollFunction()};
 
@@ -32,5 +38,25 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// loading screen
-	
+// Hero image carousel
+
+function switchImage() {
+	let heroImg = document.querySelector("#image1");
+
+	heroImg.src = `images/${imgSources[counter]}`;
+
+	if (counter < 2) {
+		counter++
+	} else {
+		counter = 0;
+	}
+}
+
+// stopping
+
+// function switchImage() {
+//     clearInterval(imageSwitcher);
+// }
+
+
+})();	
