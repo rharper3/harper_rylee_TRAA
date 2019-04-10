@@ -86,26 +86,105 @@ span {
   text-align: center;
   padding: 7px;
   font-size: 12.5px;
-  /*text-transform: uppercase;*/
   text-decoration: none;
   color: #F1F1F1F1;
   border: none;
   border-radius: 3px;
-  /*Gardient VVV*/
-  background: rgba(240,240,240,1);
-  background: -moz-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(224,224,224,1) 47%, rgba(194,194,194,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,240,240,1)), color-stop(47%, rgba(224,224,224,1)), color-stop(100%, rgba(194,194,194,1)));
-  background: -webkit-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(224,224,224,1) 47%, rgba(194,194,194,1) 100%);
-  background: -o-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(224,224,224,1) 47%, rgba(194,194,194,1) 100%);
-  background: -ms-linear-gradient(left, rgba(240,240,240,1) 0%, rgba(224,224,224,1) 47%, rgba(194,194,194,1) 100%);
-  background: linear-gradient(to right, rgba(240,240,240,1) 0%, rgba(224,224,224,1) 47%, rgba(194,194,194,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#c2c2c2', GradientType=1 );
+  background-color: #9c9da0;
+  
 }
 
+.button:hover {
+  background-color: #9ABD4B;
+}
+
+/*Loading Screen*/
+
+/*#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+
+  -webkit-animation: spin 2s linear infinite; 
+  animation: spin 2s linear infinite; 
+
+  z-index: 1001;
+}
+
+  #loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+  #loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+
+  -webkit-animation: spin 1.5s linear infinite; 
+    animation: spin 1.5s linear infinite; 
+} 
+
+@-webkit-keyframes spin {
+  0% { 
+    -webkit-transform: rotate(0deg); 
+    -ms-transform: rotate(0deg);  
+    transform: rotate(0deg);  
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% { 
+    -webkit-transform: rotate(0deg); 
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg); 
+    -ms-transform: rotate(360deg); 
+    transform: rotate(360deg);  
+  }
+}
+*/
 /*Index*/
 
 .mainHeader {
-  margin-bottom: 50px;
   margin-top: 5px;
 }
 
@@ -125,8 +204,8 @@ span {
 
 .mainNav button.expanded {
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .mainNav li a {
@@ -163,10 +242,11 @@ span {
   max-width: 150px;
 }
 
-#heroImage div {
-  height: 150px;
-  background-color: gray;
+#heroImage {
+  margin-top: 0;
   margin-bottom: 50px;
+  border-top: solid 3px #9ABD4B;
+  display: none;
 }
 
 #welcome {
@@ -274,16 +354,43 @@ span {
   border: solid 1px #9ABD4B;
 }
 
+#merchSection {
+  margin-top: 200px;
+}
+
+#merchSection h1 {
+  margin: 50px 0 50px 0;
+  }
+
+#merch div {
+  height: 210px;
+  width: 210px;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
 #supporters h1 {
   margin: 100px 0 15px 0; 
 }
 
 #supportersLogos {
  display: flex;
- flex-direction: row;
+ margin-bottom: 50px;
  flex-wrap: wrap;
  justify-content: center;
- margin-bottom: 50px;
+}
+
+#section1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#section2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .footerNav {
@@ -316,6 +423,10 @@ span {
 
 /*contact page*/
 
+#locationInfo {
+  margin-top: 50px;
+}
+
 input[type=text], select, textarea {
   display: flex;
   flex-wrap: wrap;
@@ -326,7 +437,8 @@ input[type=text], select, textarea {
   box-sizing: border-box;
   margin-top: 20px; 
   margin-bottom: 16px;
-  resize: vertical; 
+  resize: vertical;
+
 }
 
 #mainMap {
@@ -428,8 +540,8 @@ input[type=text], select, textarea {
 
 @media screen and (min-width: 640px) { 
 
-#heroImage div {
-  height: 250px;
+#heroImage {
+  display: block;
 }
 
 #membershipFunding {
@@ -485,6 +597,13 @@ input[type=text], select, textarea {
     margin: 30px 15px 30px 0px;
 }
 
+#merch {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .footerNav ul li a {
   display: block;
   font-size: 16px;
@@ -511,7 +630,7 @@ h3 {
   
 .mainHeader {
   display: flex;
-  border-bottom: solid 6px #9ABD4B;
+  border-bottom: solid 3px #9ABD4B;
 }
 
 #button {
@@ -529,6 +648,8 @@ h3 {
 }
 
 .mainNav {
+  margin-top: 50px;
+  margin-right: 30px;
   margin-left: auto;
   margin-bottom: 15px;
 }
@@ -554,7 +675,7 @@ h3 {
 }
 
 .topNav {
-  margin-left: auto;
+  margin-left: 317px;
   padding-bottom: 10px;
   margin-bottom: 15px;
   text-decoration: underline;
@@ -612,10 +733,6 @@ p {
     max-width: 125px;
 }
 
-#heroImage div {
-  height: 300px;
-}
-
 #infoTXT p {
   max-width: none;
 }
@@ -626,10 +743,11 @@ p {
 }
 
 @media screen and (min-width: 1400px) {
+
 .mainNav {
   font-size: 20px;
   margin-right: 20px;
-  }
+}
 
 #traaLogo {
   max-width: 160px;
@@ -692,6 +810,14 @@ p {
 /*projects page media queries*/
 
 @media screen and (min-width: 640px) {
+
+  .header {
+    border-bottom: solid 6px #9ABD4B;
+  }
+
+  #projectDesc {
+    margin-top: 50px;
+  }
 
   #salmonidMon {
   display: flex;
