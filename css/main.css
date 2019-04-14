@@ -26,8 +26,7 @@ img {
 
 /*General Rules for Elements*/
 
-body
-{
+body {
 	font-family: 'OpenSans', Helvetica, Arial, sans-serif;
 	background-color: #fff;
 	margin: 0;
@@ -40,22 +39,19 @@ p {
   font-size: 14px;
 }
 
-a 
-{ 
+a { 
   color:#000; 
   text-decoration: none;  
   transition:all .1s linear 0s;
 }
 
-h1
-{
+h1 {
   font-family: 'Signika', Times, "Times New Roman", serif;
   color: #5d7031;
   font-size: 20px;
 }
 
-h2
-{
+h2 {
 	font-family: 'Signika', Times, "Times New Roman", serif;
 	color: #5d7031;
   font-size: 16px;
@@ -100,63 +96,7 @@ span {
 
 /*Loading Screen*/
 
-/*#loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-}
-
-#loader {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #3498db;
-
-  -webkit-animation: spin 2s linear infinite; 
-  animation: spin 2s linear infinite; 
-
-  z-index: 1001;
-}
-
-  #loader:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #e74c3c;
-
-  -webkit-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
-}
-
-  #loader:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #f9c922;
-
-  -webkit-animation: spin 1.5s linear infinite; 
-    animation: spin 1.5s linear infinite; 
-} 
-
+/*
 @-webkit-keyframes spin {
   0% { 
     -webkit-transform: rotate(0deg); 
@@ -403,6 +343,8 @@ flex: 1 1 200px;
 .footerNav ul {
   display: flex;
   flex-direction: row;
+  margin-left: auto;
+  margin-right: 15px;
 }
 
 .footerNav ul li a {
@@ -449,6 +391,10 @@ input[type=text], select, textarea {
 #mainMap iframe {
   width: 97% !important;
   height: 300px;
+}
+
+#findUs {
+  margin-bottom: 80px;
 }
 
 #mailUs h1 {
@@ -504,7 +450,7 @@ input[type=text], select, textarea {
 
 #troutHatcheryIMG {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 
@@ -521,7 +467,7 @@ input[type=text], select, textarea {
 }
 
 #projectArchives {
-  margin: 80px 0 80px 0;
+  margin: 90px 0 90px 0;
 }
 
 #projectArchives h1 {
@@ -546,6 +492,10 @@ input[type=text], select, textarea {
   margin-right: 40px;
 }
 
+#traaLogo {
+  margin: 0 auto;
+}
+
 #heroImage {
   display: block;
 }
@@ -554,6 +504,10 @@ input[type=text], select, textarea {
   display: grid;
   grid-template-columns: repeat(2, minmax(0,1fr));
   grid-gap: 30px;
+}
+
+#funding h1 {
+  margin-top: 0;
 }
 
 #meeting {
@@ -610,12 +564,18 @@ input[type=text], select, textarea {
   flex-wrap: wrap;
 }
 
+.footerLogo {
+  max-width: 70px;
+  order: -1;
+  flex: 1 1 200px;
+  margin-left: 15px;
+}
+
 .footerNav ul li a {
   display: block;
   font-size: 16px;
   margin-top: 30px;
-  margin-right: auto;
-  }
+}
 
 }
 
@@ -637,6 +597,11 @@ h3 {
 .mainHeader {
   display: flex;
   border-bottom: solid 3px #9ABD4B;
+}
+
+#traaLogo {
+  margin: 0;
+  margin-left: 25px;
 }
 
 #button {
@@ -702,9 +667,16 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
 }
+#membership {
+  margin-left: 15px;
+}
+
+#membership p {
+  max-width: 75%;
+}
 
 #funding {
-  margin-left: auto;
+  margin-right: 15px;
 }
 
 .troutHatchery {
@@ -734,21 +706,6 @@ h3 {
     margin: 30px 15px 30px 0px;
 }
 
-#traaLogo {
-  margin: 0;
-  margin-left: 25px;
-}
-
-.footerLogo {
-  max-width: 70px;
-  order: -1;
-  flex: 1 1 200px;
-}
-
-#footerNav {
-  margin-left: 600px;
-}
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -770,7 +727,6 @@ p {
 .rodBuildingTXT h2 {
   margin-bottom: 15px
 }
-
 
 #logoCon {
   margin: 0;
@@ -825,7 +781,7 @@ p {
 
 #mainMap {
   margin: 0;
-   height: 100% !important;
+  height: 100% !important;
   width: 100% !important;
     /*display: grid*/
 }
@@ -862,13 +818,13 @@ p {
 
 #salmonidMonIMG {
   margin-top: 80px;
-  flex: 1 1 150px;
+  flex: 1 1 210px;
   margin-right: 15px;
 }
 
 #salmonidMonTXT {
   margin-top: 80px;
-  flex: 1 1 900px;
+  flex: 1 1 930px;
 }
 
 #troutHatchery {
