@@ -70,6 +70,31 @@ span {
   font-weight: bold;
 }
 
+a {
+	color: green;
+}
+
+a:hover {
+	color: black;
+}
+
+.button {
+  text-align: center;
+  padding: 7px;
+  font-size: 12.5px;
+  text-decoration: none;
+  color: #F1F1F1F1;
+  border: none;
+  border-radius: 3px;
+  background-color: #9c9da0;
+  
+}
+
+.button:hover {
+  background-color: #9ABD4B;
+}
+
+
 .container {
 	margin: 0 auto;
 	/*max-wdith up to 1200px*/
@@ -78,8 +103,13 @@ span {
 }
 
 .mainHeader {
+  margin-top: 5px;
   display: flex;
   border-bottom: solid 3px #9ABD4B;
+}
+
+#button {
+  display: none;
 }
 
 #burgerCon {
@@ -90,12 +120,15 @@ span {
 #logoCon {
   display: flex;
   order: -1;
+  flex: 1 1 100px;
+  margin: 0;
 }
 
 .mainNav {
-  margin-top: 50px;
+  margin-top: 80px;
   margin-right: 30px;
   margin-left: auto;
+  /*margin-bottom: 15px;*/
 }
 
 .mainNav li {
@@ -114,34 +147,17 @@ span {
 }
 
 #traaLogo {
-  max-width: 120px;
+  max-width: 125px;
+  order: -1;
 }
 
 #logoCon {
-  display: flex;
-}
-
-.mainNav {
-  margin-left: auto;
-  margin-bottom: 15px;
-}
-
-.mainNav li {
-  display: inline;
-  margin-left: 20px;
-}
-
-.mainNav li a {
-  display: inline;
-  color: gray; 
-}
-
-#traaLogo {
-  max-width: 20%;
+  margin-right: 0 auto;
+  margin-left: 25px;
 }
 
 .topNav {
-  margin-left: auto;
+  margin-left: 317px;
   padding-bottom: 10px;
   margin-bottom: 15px;
   text-decoration: underline;
@@ -157,11 +173,20 @@ span {
 .footerLogo {
   max-width: 70px;
   order: -1;
+  flex: 1 1 200px;
+  margin-left: 15px;
+}
+
+.footerNav ul li a {
+  font-size: 16px;
+  margin-top: 30px;
 }
 
 .footerNav ul {
   display: flex;
   flex-direction: row;
+  margin-left: auto;
+  margin-right: 15px;
 }
 
 .footerNav ul li a {
@@ -244,7 +269,7 @@ span {
 #streamHabitat {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 30px;
+	margin-bottom: 80px;
 }
 
 #streamHabitat h2 {
@@ -255,9 +280,14 @@ span {
 	margin-bottom: 15px;
 }
 
+#streamHabitat p {
+	margin-bottom: 36px;
+}
+
 #paddleFish {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 40px;
 }
 
 #paddleFishIMG {
@@ -267,6 +297,10 @@ span {
 #paddleFishTXT {
 	max-width: 75%;
 	margin-top: 30px;
+}
+
+#paddleFishTXT p {
+	margin-bottom: 36px;
 }
 
 #paddleFishTXT h2 {
@@ -434,7 +468,7 @@ span {
 }
 
 #year2009 a {
-	padding: 10px;
+	margin-right: 10px;
 }
 
 #year2008  {
@@ -447,5 +481,5 @@ span {
 }
 
 #year2008 a {
-	padding: 10px;
+	margin-right: 10px;
 }
