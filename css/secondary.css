@@ -364,12 +364,9 @@ a:hover {
 	text-align: justify;
 }
 
-#promoVideo {
-	margin: auto;
-	margin-top: 50px;
-	height: 300px; 
-	width: 580px;
-	background-color: gray;
+video {
+	margin-left: 190px;
+	margin-top: 50px;	
 }
 
 .placeholder {
