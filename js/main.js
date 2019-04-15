@@ -4,10 +4,10 @@
 
 	var button 	  = document.querySelector("#button");
 	var burgerCon = document.querySelector("#burgerCon");
-	var imageSwitcher = window.setInterval(switchImage, 2000);
+	var imageSwitcher = window.setInterval(switchImage, 8000);
 	var counter = 0;
 
-	const imgSources = ["traa_heroimage.svg", "placeholder1_carousel.svg", "placeholder2_carousel.svg"]
+	const imgSources = ["traa_heroimage.svg", "traa_SignupDonate_HeroImage.svg", "traa_Merch_HeroImage.svg"]
 
 // Hamburger Menu
 
